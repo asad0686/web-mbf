@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annual Science & Arts Fair | Oakridge High School</title>
+    <style>
+        /* Base Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f7f6;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: #1e3a8a;
+            color: #fff;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav a:hover {
+            color: #93c5fd;
+        }
+
+        /* Hero Banner */
+        .hero {
+            background: linear-gradient(rgba(30, 58, 138, 0.8), rgba(30, 58, 138, 0.8)), 
+                        url('https://unsplash.com') center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 5rem 20px;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .btn {
+            background-color: #f59e0b;
+            color: #fff;
+            padding: 12px 28px;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background-color: #d97706;
+        }
+
+        /* Container & Sections */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 3rem 20px;
+        }
+        h2 {
+            text-align: center;
+            color: #1e3a8a;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+
+        /* Event Highlights Grid */
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 3rem;
+        }
+        .card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        .card h3 {
+            color: #1e3a8a;
+            margin-bottom: 10px;
+        }
+
+        /* Schedule Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        th {
+            background-color: #1e3a8a;
+            color: #fff;
+        }
+
+        /* Registration Form */
+        .register-box {
+            background: #fff;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button[type="submit"] {
+            width: 100%;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111827;
+            color: #9ca3af;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header>
+        <div class="logo">Oakridge High School</div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#register">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Annual Science & Arts Fair 2026</h1>
+        <p>Join students, parents, and faculty for a day of innovation, live performances, and creative exhibitions.</p>
+        <a href="#register" class="btn">RSVP Now</a>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        
+        <!-- Event Details -->
+        <section id="about">
+            <h2>Event Highlights</h2>
+            <div class="highlights">
+                <div class="card">
+                    <h3>📅 Date & Time</h3>
+                    <p>Saturday, November 21, 2026<br>9:00 AM – 4:00 PM</p>
+                </div>
+                <div class="card">
+                    <h3>📍 Location</h3>
+                    <p>Oakridge Main Auditorium<br>& Campus Courtyard</p>
+                </div>
+                <div class="card">
+                    <h3>🎟️ Admission</h3>
+                    <p>Free for all students,<br>families, and local guests</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schedule Section -->
+        <section id="schedule">
+            <h2>Event Schedule</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Activity</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>09:00 AM</td>
+                        <td>Opening Ceremony & Principal's Welcome</td>
+                        <td>Main Auditorium</td>
+                    </tr>
+                    <tr>
+                        <td>10:30 AM</td>
+                        <td>STEM & Robotics Exhibition</td>
+                        <td>Science Wing</td>
+                    </tr>
+                    <tr>
+                        <td>01:00 PM</td>
+                        <td>Student Art Gallery & Acoustic Performances</td>
+                        <td>Campus Courtyard</td>
+                    </tr>
+                    <tr>
+                        <td>03:30 PM</td>
+                        <td>Awards Presentation & Closing Remarks</td>
+                        <td>Main Auditorium</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- RSVP Form -->
+        <section id="register" style="margin-top: 3rem;">
+            <h2>Register to Attend</h2>
+            <div class="register-box">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="role">I am attending as a...</label>
+                        <select id="role" name="role">
+                            <option value="student">Student</option>
+                            <option value="parent">Parent / Guardian</option>
+                            <option value="faculty">Faculty / Staff</option>
+                            <option value="guest">Community Guest</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn">Confirm Registration</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Oakridge High School &bull; 123 Education Lane &bull; Contact: events@oakridgehigh.edu</p>
+        <p>&copy; 2026 Oakridge High School. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
